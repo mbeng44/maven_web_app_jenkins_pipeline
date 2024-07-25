@@ -1,7 +1,7 @@
-FROM openjdk:17-slim  
+FROM openjdk:17-jdk-alpine  
 
-COPY target/*.war app.war  
+COPY target/*.war /opt/tomcat/webapps
 
-EXPOSE 8081
+EXPOSE 9080
 
-CMD ["java", "-jar", "app.war"] 
+CMD ["catalina.sh", "run"] 
