@@ -2,6 +2,6 @@ FROM tomcat:jre17-temurin
 
 COPY target/*.war /usr/local/tomcat/webapps
 
-EXPOSE 9080
+EXPOSE 8080
 
 CMD ["catalina.sh", "run"] 
