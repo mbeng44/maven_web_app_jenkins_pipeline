@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-              git branch: 'main', url: 'https://github.com/ashokitschool/maven_web_app_jenkins_pipeline.git' 
+              git branch: 'main', url: 'https://github.com/NformiBlandine/maven_web_app_jenkins_pipeline.git' 
             }
         }
         
