@@ -4,4 +4,4 @@ COPY target/*.war /opt/tomcat/webapps
 
 EXPOSE 9080
 
-CMD ["catalina.sh", "run"] 
+CMD ["/opt/tomcat/apache-tomcat-11.0.0-M22/bin/catalina.sh", "run"] 
