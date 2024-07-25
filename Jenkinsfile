@@ -44,7 +44,7 @@ pipeline {
          stage('Container deployment') {
             steps {
              
-              sh 'docker run -d --name my container my-image:latest'
+              sh 'docker run -d --name container my-image:latest'
               
             }
         }
