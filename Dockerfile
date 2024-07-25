@@ -1,6 +1,6 @@
 FROM tomcat:jre17-temurin  
 
-COPY target/*.war /opt/tomcat/webapps
+COPY target/*.war /usr/local/tomcat/webapps
 
 EXPOSE 9080
 
