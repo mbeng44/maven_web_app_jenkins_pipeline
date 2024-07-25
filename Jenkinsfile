@@ -41,13 +41,13 @@ pipeline {
             }
         }
 
-         stage('Container deployment') {
+    /*     stage('Container deployment') {
             steps {
              
-              sh 'docker run -d --name container -p 6000:9080 my-image:latest'
+              sh 'docker run -d --name container -p 6000:9080 my-image:latest']
               
             }
-        }
+        } */
         
         
     }
