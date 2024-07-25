@@ -33,10 +33,18 @@ pipeline {
             }
         }
      */
-     stage('deploy') {
+     stage('Image creation') {
             steps {
              
               sh 'docker build -t my-image:latest .'
+              
+            }
+        }
+
+         stage('Container deployment') {
+            steps {
+             
+              sh 'docker run -d --name my container my-image:latest'
               
             }
         }
